@@ -19,7 +19,7 @@ def binary_search (_arr, _value):
     while l <= u:
         # if _arr[l] > _value or _arr[u] < _value:
         #     return -1
-        m = int((l+u)/2)
+        m = int((u-l)/2 + l)
         if _arr[m] == _value:
             return m
         elif _arr[m] < _value:
